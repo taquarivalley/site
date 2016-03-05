@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Taquari Valley - Associação de Empreendedores do Vale do Taquari</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:400,800,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600italic,600,700' rel='stylesheet' type='text/css'>
+	
+	<meta property="og:title" content="Taquari Valley - Associação de Empreendedores do Vale do Taquari">
+    <meta property="og:description" content="O Taquari Valley é uma comunidade de empreendedores">
+    <meta property="og:url" content="http://www.taquarivalley.com.br">
+    <meta property="og:site_name" content="Taquari Valley">
+    <meta property='og:image' content='http://www.taquarivalley.com.br/logo.png'/>
+    <meta property="og:type" content="website">
+</head>
+<body>
+	<section id="newsletter" class="text-center">
+		<span>Fique por dentro de todas as notícias e novidades do Taquari Valley: </span>
+		<form method="post" class="af-form-wrapper" accept-charset="UTF-8" action="news.php"  >				
+				<input required type="text" name="name" class="text" value=""  placeholder="Digite seu nome" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" />				
+				<input required class="text" id="awf_field-74620732" type="text" placeholder="Digite seu email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " />
+							
+				<input name="submit" value="Inscreva-se" type="submit" alt="Cadastrar" tabindex="502" />									
+		</form>
+			<script type="text/javascript">
+			    <!--
+			    (function() {
+			        var IE = /*@cc_on!@*/false;
+			        if (!IE) { return; }
+			        if (document.compatMode && document.compatMode == 'BackCompat') {
+			            if (document.getElementById("af-form-1913708680")) {
+			                document.getElementById("af-form-1913708680").className = 'af-form af-quirksMode';
+			            }
+			            if (document.getElementById("af-body-1913708680")) {
+			                document.getElementById("af-body-1913708680").className = "af-body inline af-quirksMode";
+			            }
+			            if (document.getElementById("af-header-1913708680")) {
+			                document.getElementById("af-header-1913708680").className = "af-header af-quirksMode";
+			            }
+			            if (document.getElementById("af-footer-1913708680")) {
+			                document.getElementById("af-footer-1913708680").className = "af-footer af-quirksMode";
+			            }
+			        }
+			    })();
+			    -->
+			</script>			
+	</section>
+	<header>
+		<div class="container">
+			<h1>Taquari Valley</h1>
+			<h2>Faça parte da associação de empreendedores do Vale do Taquari-RS<br/>Conecte-se e conheça os negócios inovadores da nossa região.</h2>
+			<a id="start-now" href="#map" class="hvr-outline-out"><strong>COMECE AGORA</strong></a>
+			<div id="social">
+				<a href="https://www.facebook.com/taquarivalley" target="blank" title="Acompanhe-nos no facebook">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
+						<g>
+							<path id="Facebook__x28_alt_x29_" d="M90,15.001C90,7.119,82.884,0,75,0H15C7.116,0,0,7.119,0,15.001v59.998
+								C0,82.881,7.116,90,15.001,90H45V56H34V41h11v-5.844C45,25.077,52.568,16,61.875,16H74v15H61.875C60.548,31,59,32.611,59,35.024V41
+								h15v15H59v34h16c7.884,0,15-7.119,15-15.001V15.001z"/>
+						</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</header>
+	<section id="map">
+		<iframe style="position:relative;" src="https://mapme.com/taquari-valley/embedded" width="100%" height="900" frameborder="0" id="framed"></iframe>
+	</section>
+	<footer>
+		<div class="container">
+			<p>
+				<center>Taquari Valley - 2016 </center>
+			</p>
+		</div>
+	</footer>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74114708-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			function sleep(milliseconds) {
+			  var start = new Date().getTime();
+			  for (var i = 0; i < 1e7; i++) {
+			    if ((new Date().getTime() - start) > milliseconds){
+			      break;
+			    }
+			  }
+			}
+			$("#newsletter").on('submit', 'form', function(event) {				
+				$("#newsletter form").hide('400');
+				$("#newsletter span").text('Parabéns, você está cadastrado. Acesse seu email e confirme a inscrição.');
+			});	
+		});
+	</script>
+</body>
+</html>
