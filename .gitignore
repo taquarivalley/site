@@ -1,0 +1,7 @@
+# Eclipse Project
+.settings/
+.buildpath
+.project
+
+# Mac OS X
+.DS_Store
